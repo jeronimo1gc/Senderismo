@@ -15,23 +15,15 @@ import javax.swing.DefaultListModel;
 public class pruebas {
        Connection conexion = null;
        GestionRuta gestRuta = new GestionRuta();
-            
-      
-        try {
-            Conexion.conectar("localhost","root","");
-            
-       
-          
-            
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+       Conexion.conectar("localhost","root","");
+        
+
         
         ArrayList<Ruta> ruta = gestRuta.findPoblacion("Ubrique");
         DefaultListModel listModel = new DefaultListModel();
         
       
-        for (int i=0; i < ruta.size(); i++) {
+        for (i=0; i < ruta.size(); i++) {
     
             listModel.add(i, ruta.get(i));
             
