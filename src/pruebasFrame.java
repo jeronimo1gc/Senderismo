@@ -27,7 +27,7 @@ public class pruebasFrame extends javax.swing.JFrame {
         
 
         
-        ArrayList<Ruta> ruta = gestRuta.findPoblacion("Ubrique");
+        ArrayList<Ruta> ruta = gestRuta.leerRutas();
         DefaultListModel listModel = new DefaultListModel();
         
       
